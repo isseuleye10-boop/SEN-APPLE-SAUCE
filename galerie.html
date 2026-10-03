@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Galerie photo de SEN APPLE SAUCE : 100% Cuisine Sénégalaise, plats authentiques et Teranga.">
+  <title>Galerie — SEN APPLE SAUCE | 100% Sénégalais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌿</div>
+        <div class="logo-text">
+          <span class="logo-name">SEN APPLE SAUCE</span>
+          <span class="logo-tagline">100% Sénégalais</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="menu.html" class="nav-link">Menus</a></li>
+        <li><a href="apropos.html" class="nav-link">À Propos</a></li>
+        <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+        <li><a href="reservation.html" class="nav-link">Réservation</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="reservation.html" class="btn btn-primary nav-cta"><i class="fas fa-calendar-alt"></i> Réserver</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul role="list"
+      style="display:flex;flex-direction:column;align-items:center;gap:2rem;list-style:none;text-align:center;">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="menu.html" class="nav-link">Menus</a></li>
+      <li><a href="apropos.html" class="nav-link">À Propos</a></li>
+      <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+      <li><a href="reservation.html" class="nav-link">Réservation</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="reservation.html" class="btn btn-primary btn-lg" style="margin-top:1rem;"><i
+        class="fas fa-calendar-alt"></i> Réserver</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/restaurant_ambiance.jpg" alt="Ambiance Teranga SEN APPLE SAUCE">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i>
+        <span>Galerie</span>
+      </nav>
+      <h1 class="page-hero-title">Notre <span class="accent">Teranga</span> en images</h1>
+      <p style="color:rgba(248,244,235,0.72);font-family:var(--font-elegant);font-size:1.1rem;margin-top:0.5rem;">
+        Plongez dans l'univers 100% sénégalais de SEN APPLE SAUCE.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section-pad" style="background:var(--ivory);" aria-label="Galerie photos">
+    <div class="container">
+      <div class="section-intro center text-center" style="margin-bottom:3rem;">
+        <span class="section-label">🇸🇳 100% Sénégal</span>
+        <h2 class="section-title">Couleurs & Saveurs du pays de la Teranga</h2>
+        <div class="divider-gold center"></div>
+        <p class="section-subtitle">
+          Cliquez sur une photo pour l'agrandir. Découvrez nos plats emblématiques (Thieboudienne, Yassa, Mafé) et notre
+          décoration inspirée des tissus wax colorés.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="gallery-grid" aria-label="Galerie photographique">
+
+        <div class="gallery-item tall reveal" data-src="images/hero_thieboudiene.jpg"
+          data-caption="Thieboudienne — Le plat national par excellence" tabindex="0" role="button">
+          <img src="images/thieboudjeun.jpg" alt="Thieboudienne sénégalais" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1.5rem 1rem 1rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:1rem; font-weight:600;"></p>
+            <p style="font-size:0.78rem; opacity:0.8;">Fierté Nationale</p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/yassa_poulet.jpg"
+          data-caption="Yassa Poulet — Oignons fondants, citron et moutarde" tabindex="0" role="button">
+          <img src="images/yassa_poulet.jpg" alt="Yassa poulet" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/mafe_viande.jpg"
+          data-caption="Mafé — Ragoût généreux à la pâte d'arachide" tabindex="0" role="button">
+          <img src="images/mafe.jpeg" alt="Mafé bœuf" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Bissap et Bouye — La fraîcheur sénégalaise" tabindex="0" role="button">
+          <img src="images/Jus_Bissap.jpg" alt="Jus de Bissap" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item tall reveal" data-src="images/restaurant_ambiance.jpg"
+          data-caption="Ambiance — Nappes colorées et hospitalité" tabindex="0" role="button">
+          <img src="images/ambi.jpg" alt="Ambiance restaurant sénégalais" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1.5rem 1rem 1rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:1rem; font-weight:600;"></p>
+            <p style="font-size:0.78rem; opacity:0.8;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/thiakry_dessert.jpg"
+          data-caption="Thiakry — Douceur de couscous de mil et lait caillé" tabindex="0" role="button">
+          <img src="images/Thiakry.jpg" alt="Thiakry dessert" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/jus moringa.jpeg" alt="jus Moringa" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus_Corossol.jpg" alt="Jus_Corossol" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus_Mangue.jpg" alt="Jus_Mangue" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus_Bouy.jpg" alt="Jus_Bouy" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus_Ditakh.jpg" alt="Jus_Ditakh" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus_Tamarin.jpg" alt="Jus_Tamarin" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Jus bissap, bouy et orange.jpg" alt="jus natural" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/thieboudjeun.jpg" alt="Thiebu Diene" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/thiebou_yapp.jpeg" alt="thiebou_yapp" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Vermicelle.jpeg" alt="Vermicelle" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/yassa_poulet.jpg" alt="yassa_poulet" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/mbakhalou_saloum.jpg" alt="mbakhalou_saloum" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/mafe.jpeg" alt="mafe" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Domoda.jpeg" alt="Domoda" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/brochette.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/mbakhalou_saloum.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/soupe_Kandia.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/lakh.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/lentille.jpeg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/fataya.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/ngallakh.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/nambé.jpeg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/fam.jpeg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Vermicelle.jpeg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/fami.jpeg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+          data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+          <img src="images/Akara.jpg" alt="brochette" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+          <div
+            style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+            <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+          </div>
+          <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+            data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+            <img src="images/athiéké.jpeg" alt="brochette" loading="lazy">
+            <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+            <div
+              style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+              <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+            </div>
+            <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+              data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+              <img src="images/spgti.jpeg" alt="brochette" loading="lazy">
+              <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+              <div
+                style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+                <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+              </div>
+              <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+                data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+                <img src="images/cake.jpeg" alt="brochette" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                <div
+                  style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+                  <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+                </div>
+                <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+                  data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+                  <img src="images/caf.jpg" alt="brochette" loading="lazy">
+                  <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                  <div
+                    style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+                    <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+                  </div>
+                  <div class="gallery-item reveal" data-src="images/bissap_boissons.jpg"
+                  data-caption="Attaya — Le thé sénégalais autour duquel on se rassemble" tabindex="0" role="button">
+                  <img src="images/img.avif" alt="brochette" loading="lazy">
+                  <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                  <div
+                    style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.7)); padding:1rem 0.75rem 0.75rem; color:white;">
+                    <p style="font-family:var(--font-display); font-size:0.9rem; font-weight:600;"></p>
+                  </div>
+                </div>
+
+
+
+
+
+
+              </div><!-- /#gallery-grid -->
+            </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">
+      <i class="fas fa-times"></i>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption"
+      style="position:absolute; bottom:1.5rem; left:50%; transform:translateX(-50%); color:rgba(255,255,255,0.8); font-family:var(--font-elegant); font-size:1rem; text-align:center; white-space:nowrap;">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    const items = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    function openLightbox(src, caption, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightboxCaption.textContent = caption || '';
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        openLightbox(item.dataset.src, item.dataset.caption, item.querySelector('img')?.alt);
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {if (e.target === lightbox) closeLightbox();});
+  </script>
+</body>
+
+</html>

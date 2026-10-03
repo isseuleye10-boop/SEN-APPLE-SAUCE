@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez le menu complet de SEN APPLE SAUCE : Thiéboudiène, Yassa, Mafé, Soupou Kandia, grillades, boissons traditionnelles et desserts sénégalais.">
+  <title>Menus — SEN APPLE SAUCE | Restaurant Sénégalais Authentique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="SEN APPLE SAUCE — Accueil">
+        <div class="logo-icon">🌿</div>
+        <div class="logo-text">
+          <span class="logo-name">SEN APPLE SAUCE</span>
+          <span class="logo-tagline">Restaurant Sénégalais</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"       class="nav-link">Accueil</a></li>
+        <li><a href="menu.html"        class="nav-link active">Menus</a></li>
+        <li><a href="apropos.html"     class="nav-link">À Propos</a></li>
+        <li><a href="galerie.html"     class="nav-link">Galerie</a></li>
+        <li><a href="reservation.html" class="nav-link">Réservation</a></li>
+        <li><a href="contact.html"     class="nav-link">Contact</a></li>
+      </ul>
+      <a href="reservation.html" class="btn btn-primary nav-cta"><i class="fas fa-calendar-alt"></i> Réserver</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul role="list" style="display:flex;flex-direction:column;align-items:center;gap:2rem;list-style:none;text-align:center;">
+      <li><a href="index.html"       class="nav-link">Accueil</a></li>
+      <li><a href="menu.html"        class="nav-link">Menus</a></li>
+      <li><a href="apropos.html"     class="nav-link">À Propos</a></li>
+      <li><a href="galerie.html"     class="nav-link">Galerie</a></li>
+      <li><a href="reservation.html" class="nav-link">Réservation</a></li>
+      <li><a href="contact.html"     class="nav-link">Contact</a></li>
+    </ul>
+    <a href="reservation.html" class="btn btn-primary btn-lg" style="margin-top:1rem;"><i class="fas fa-calendar-alt"></i> Réserver</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Nos menus">
+    <div class="page-hero-bg">
+      <img src="images/img.avif " alt="Cuisine sénégalaise authentique">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i>
+        <span>Menus</span>
+      </nav>
+      <h1 class="page-hero-title">Nos <span class="accent">Menus</span></h1>
+      <p style="color:rgba(248,244,235,0.72); font-family:var(--font-elegant); font-size:1.1rem; margin-top:0.5rem;">
+        Toute la richesse de la gastronomie sénégalaise
+      </p>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="section-pad" style="background: var(--ivory);" aria-label="Menu complet">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="section-intro center text-center" style="margin-bottom: 3rem;">
+        <span class="section-label">🍽️ Notre Carte</span>
+        <h2 class="section-title">Des saveurs authentiquement sénégalaises</h2>
+        <div class="divider-gold center"></div>
+        <p class="section-subtitle">
+          Filtrez par catégorie et découvrez nos plats préparés selon les recettes traditionnelles sénégalaises.
+          Tous nos plats sont préparés à la commande avec des ingrédients frais.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="menu-filters" role="group" aria-label="Filtres de catégories">
+        <button class="filter-btn active" data-filter="all" id="filter-all">
+          <i class="fas fa-th"></i> Tous les plats
+        </button>
+        <button class="filter-btn" data-filter="traditionnel" id="filter-traditionnel">
+          <i class="fas fa-bowl-food"></i> Plats Traditionnels
+        </button>
+        <button class="filter-btn" data-filter="grillade" id="filter-grillade">
+          <i class="fas fa-fire"></i> Grillades
+        </button>
+        <button class="filter-btn" data-filter="boisson" id="filter-boisson">
+          <i class="fas fa-glass-water"></i> Boissons
+        </button>
+        <button class="filter-btn" data-filter="dessert" id="filter-dessert">
+          <i class="fas fa-ice-cream"></i> Desserts
+        </button>
+      </div>
+
+      <!-- Menu Cards (rendered by JS) -->
+      <div id="menu-container" aria-live="polite" aria-label="Liste des plats">
+        <!-- Rempli dynamiquement par menu.js -->
+        <div style="text-align:center; padding: 3rem; color: var(--text-light);">
+          <i class="fas fa-spinner fa-spin" style="font-size:2rem; color:var(--gold);"></i>
+          <p style="margin-top:1rem;">Chargement du menu...</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section-pad-sm">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Envie de goûter ? <em>Réservez votre table</em></h2>
+        <p class="cta-desc">Ou commandez directement via WhatsApp pour emporter vos plats préférés.</p>
+        <div class="cta-actions">
+          <a href="reservation.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-calendar-alt"></i> Réserver
+          </a>
+          <a href="https://wa.me/221771234567?text=Bonjour%2C%20je%20voudrais%20commander." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Commander via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:1rem;">
+            <div class="logo-icon">🌿</div>
+            <div class="logo-text">
+              <span class="logo-name">SEN APPLE SAUCE</span>
+              <span class="logo-tagline">Restaurant Sénégalais</span>
+            </div>
+          </div>
+          <p class="footer-desc">Cuisine sénégalaise authentique, préparée avec amour et le Teranga sénégalais.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/221771234567" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Nos Menus</a></li>
+            <li><a href="apropos.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Réservation</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Catégories</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Plats Traditionnels</a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Grillades</a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Boissons</a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+221 77 123 45 67</span></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+221 77 123 45 67</span></div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Sam : 11h–22h30</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 SEN APPLE SAUCE. Tous droits réservés.</p>
+        <p>Fait avec ❤️ et le <em>Teranga</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/221771234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Commander sur WhatsApp</span>
+  </a>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
